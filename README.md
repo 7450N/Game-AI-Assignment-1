@@ -15,7 +15,6 @@
 
 <em>Built with the tools and technologies:</em>
 
-<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
 <img src="https://img.shields.io/badge/Unity-FFFFFF.svg?style=flat&logo=Unity&logoColor=black" alt="Unity">
 
 </div>
