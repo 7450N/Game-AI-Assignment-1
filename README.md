@@ -38,17 +38,17 @@
 
 ## ✨ Overview
 
-Game-AI-Assignment-1 is a Unity-based development framework focused on creating sophisticated AI behaviors and interactive character systems. It leverages structured state machine architectures and robust dependency management to streamline complex game development workflows.
+This repository contains a text-based Unity project developed for Game AI Assignment 1[cite: 1]. It implements the behavior of a cosplay bot using a Finite State Machine (FSM)[cite: 1]. Because this is a text-based simulation, the bot's behavior, decision-making, and current state transitions are printed directly to the Unity console[cite: 1]. 
+
+The project utilizes a Hierarchical Finite State Machine (HFSM) architecture, featuring complex nested states such as `CONVERSE`, `IDLE`, and `PERFORM` to handle various social and environmental triggers[cite: 1].
 
 **Why Game-AI-Assignment-1?**
 
 This project aims to facilitate the development of dynamic, scalable AI interactions within Unity. The core features include:
 
-- 🧩 **🔧 Dependency Management:** Utilizes package-lock.json and manifest.json to ensure consistent integration of Unity modules, supporting seamless collaboration and reliable builds.
 - 🎮 **🚦 Hierarchical Finite State Machines:** Implements HFSMs for managing complex character behaviors, enabling smooth transitions and modular behavior design.
 - 🖥️ **Behavior Scripts:** Core scripts like Cosplay_Bot.cs orchestrate responsive AI actions, making character interactions more engaging and adaptable.
-- 🌟 **Optimized Scene Setup:** Scene configurations enhance rendering performance and visual fidelity, providing a polished user experience.
-- 🔄 **Modular Architecture:** Supports scalable, maintainable codebases for developing feature-rich, cross-platform interactive applications.
+
 
 ---
 
@@ -219,56 +219,53 @@ This project aims to facilitate the development of dynamic, scalable AI interact
 
 ## 🚀 Getting Started
 
-### 📋 Prerequisites
+## How to Use the Bot (Controls)
+You can control the environment and trigger the bot's state transitions using specific keyboard inputs while monitoring the console output.
 
-This project requires the following dependencies:
+### During IDLE State
+*   Press `Enter` to flag competitionStart = true.[cite: 2]
+*   Press `H` to set the distance between the harasser and the bot to be less than 10 (which is the detection range).[cite: 2]
+*   Press `C` to set the distance between the camera and the bot to be less than 10 (which is the detection range).[cite: 2]
+*   Press `E` to flag isEngage = true.[cite: 2]
 
-- **Programming Language:** CSharp
-- **Package Manager:** Nuget
+### During PROTECT State
+*   Press `Enter` to flag competitionStart = true.[cite: 2]
+*   Press `I` to set the distance between the harasser and the bot to be more than 10 (which is the detection range).[cite: 2]
 
-### ⚙️ Installation
+### During POSE State
+*   Press `Enter` to flag competitionStart = true.[cite: 2]
+*   Press `I` to set the distance between the camera and the bot to be more than 10 (which is the detection range).[cite: 2]
 
-Build Game-AI-Assignment-1 from the source and install dependencies:
+### During CONVERSE State
+*   Press `Enter` to flag competitionStart = true.[cite: 2]
+*   Press `I` to flag isEngage = false.[cite: 2]
+*   Press `C` to take a photo with the bot.[cite: 2]
+*   Press `P` to ask the bot to perform.[cite: 2]
 
-1. **Clone the repository:**
+### During PERFORM State
+*   Press `Enter` to flag competitionStart = true.[cite: 2]
+*   Give no input in the ACTING, SINGING, or DANCING substates to flag taskLeft = false.[cite: 2]
+*   If not competing now, it will transition back to IDLE.[cite: 2]
+*   If competing now, it will transition to AWAIT_RESULT.[cite: 2]
 
-    ```sh
-    ❯ git clone https://github.com/7450N/Game-AI-Assignment-1
-    ```
+### During PREPARE State
+*   If a certain time has passed, the bot's turn will arrive, and it will transition to PERFORM.[cite: 2]
 
-2. **Navigate to the project directory:**
+### During AWAIT_RESULT State
+*   Press `W` to make the bot score more than 90 (which is the required score to gain a medal).[cite: 2]
+*   Press `L` to make the bot score lower than 90 (which is the required score to gain a medal).[cite: 2]
 
-    ```sh
-    ❯ cd Game-AI-Assignment-1
-    ```
+### During CELEBRATE State
+*   Press `C` to set the distance between the camera and the bot to be less than 10 (which is the detection range).[cite: 2]
+*   Press `E` to flag isEngage = true.[cite: 2]
 
-3. **Install the dependencies:**
+## Project Structure
+*   **`Assets/Scripts/FSM/`**: Contains the core architecture for the state machine, including the base `State.cs`, the hierarchical structure in `HFSM.cs`, and specific sub-state implementations like `IDLE.cs`, `CONVERSE.cs`, and `PERFORM.cs`.[cite: 1]
+*   **`Assets/Scripts/Cosplay_Bot.cs`**: The primary controller script that drives the state machine and handles input.[cite: 1]
 
-**Using [nuget](https://docs.microsoft.com/en-us/dotnet/csharp/):**
+### 🧪 Demo
 
-```sh
-❯ dotnet restore
-```
-
-### 💻 Usage
-
-Run the project with:
-
-**Using [nuget](https://docs.microsoft.com/en-us/dotnet/csharp/):**
-
-```sh
-dotnet run
-```
-
-### 🧪 Testing
-
-Game-ai-assignment-1 uses the {__test_framework__} test framework. Run the test suite with:
-
-**Using [nuget](https://docs.microsoft.com/en-us/dotnet/csharp/):**
-
-```sh
-dotnet test
-```
+[![YouTube Video](https://img.youtube.com/vi/Mm-soWWjgCQ/maxresdefault.jpg)]([https://youtu.be/Mm-soWWjgCQ](https://youtu.be/FzfsUcyfBoM))
 
 ---
 
