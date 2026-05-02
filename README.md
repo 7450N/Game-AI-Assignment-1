@@ -265,7 +265,7 @@ You can control the environment and trigger the bot's state transitions using sp
 
 ### 🧪 Demo
 
-[![YouTube Video](https://img.youtube.com/vi/Mm-soWWjgCQ/maxresdefault.jpg)]([https://youtu.be/Mm-soWWjgCQ](https://youtu.be/FzfsUcyfBoM))
+[![YouTube Video](https://img.youtube.com/vi/Mm-soWWjgCQ/maxresdefault.jpg)]([[https://youtu.be/Mm-soWWjgCQ](https://youtu.be/FzfsUcyfBoM))](https://youtu.be/FzfsUcyfBoM))
 
 ---
 
