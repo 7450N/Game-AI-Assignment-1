@@ -72,12 +72,8 @@ This project aims to facilitate the development of dynamic, scalable AI interact
 └── Game-AI-Assignment-1/
     ├── Assets
     │   ├── Scenes
-    │   ├── Scenes.meta
     │   ├── Scripts
-    │   └── Scripts.meta
     ├── Packages
-    │   ├── manifest.json
-    │   └── packages-lock.json
     └── README.md
 ```
 
