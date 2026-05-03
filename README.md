@@ -26,10 +26,8 @@
 
 - [Overview](#-overview)
 - [Getting Started](#-getting-started)
-    - [Prerequisites](#-prerequisites)
-    - [Installation](#-installation)
-    - [Usage](#-usage)
-    - [Testing](#-testing)
+    - [How to use the bot](#-how-to-use-the-bot)
+    - [Demo](#-demo)
 - [Features](#-features)
 - [Project Structure](#-project-structure)
     - [Project Index](#-project-index)
