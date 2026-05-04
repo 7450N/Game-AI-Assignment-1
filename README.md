@@ -6,7 +6,7 @@
 </div>
 
 ## 📌 Overview
-This project is a text-based AI simulation built in Unity, demonstrating advanced character behavior programming[cite: 1]. The core of the project is a custom **Hierarchical Finite State Machine (HFSM)** that drives the decision-making of a "Cosplay Bot" interacting in a dynamic social environment[cite: 1]. 
+This project is a text-based AI simulation built in Unity, demonstrating advanced character behavior programming. The core of the project is a custom **Hierarchical Finite State Machine (HFSM)** that drives the decision-making of a "Cosplay Bot" interacting in a dynamic social environment. 
 
 Rather than relying on visual graphics, the focus of this project is purely on **state architecture, modular code, and AI logic**, with all behaviors and state transitions logged in real-time to the Unity console[cite: 1].
 
